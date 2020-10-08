@@ -6,6 +6,6 @@ There are mainly three parameters you can change. They are 'srcdir', 'desdir', '
 2. Change the 'desdir' to the dir you want to store the sync data
 3. Change the 'timing' to the time you want to sync everyday
 
-#Others
+# Others
 You can get more details by reading the code
 Good luck!
