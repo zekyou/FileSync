@@ -13,8 +13,8 @@ def startsync(timing):
 
 
 def main():
-    srcdir = "/home/czq/Documents"
-    desdir = "/media/czq/Elements/Sync"
+    srcdir = "sourcedir"
+    desdir = "destinationdir"
     sync = SyncFile(srcdir, desdir)
     sync.syncdir()
 
@@ -24,16 +24,6 @@ class SyncFile:
         self.fromdir = fromdir
         self.todir = todir
 
-    '''
-    def timedue(self):
-        timing = "11:00:30"
-        
-        schedule.every().day.at(timing).do(self.syncdir())
-        while True:
-            schedule.run_pending()
-            time.sleep(10)
-
-    '''
 
     def syncdir(self):
         print("Start synchronize files from %s to %s at %s" % (self.fromdir, self.todir, self._localtime()))
